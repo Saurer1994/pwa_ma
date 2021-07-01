@@ -8,6 +8,7 @@ self.addEventListener("install", e => {
 })
 
 self.addEventListener("fetch", e => {
+    console.log("Fetch from Cache");
     e.respondWith(
         caches.match(e.request).then(response => {
             return response || fetch(e.request);
