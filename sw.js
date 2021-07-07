@@ -4,7 +4,7 @@ self.addEventListener("install", e => {
             return cache.addAll(["./", "./src/master.css", "./images/logo192.png"]);            
         })
     )
-    console.log("Install dcode!");
+    console.log("Install!");
 })
 
 self.addEventListener("fetch", e => {
